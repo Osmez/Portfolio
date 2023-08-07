@@ -53,12 +53,12 @@ const Navbar = ({changeTheme}) => {
             <button className="flex-col justify-center items-center hidden lg:flex" onClick={handleClick}>
                 <span className={`bg-dark block h-0.5 w-6 rounded-sm transition-all duration-300 ${isOpen? ' rotate-45 translate-y-1':'-translate-y-0.5'}`}></span>
                 <span className={`bg-dark block h-0.5 w-6 rounded-sm transition-all duration-300 ${isOpen? 'opacity-0':'opacity-100'}`}></span>
-                <span className={`bg-dark block h-0.5 w-6 rounded-sm transition-all duration-300 ${isOpen? ' rotate-45 translate-y-1':'translate-y-0.5'}`}></span>
+                <span className={`bg-dark block h-0.5 w-6 rounded-sm transition-all duration-300 ${isOpen? ' -rotate-45 translate-y-1':'translate-y-0.5'}`}></span>
             </button>
 
             <section className="w-full flex justify-between items-center lg:hidden">
             
-            <nav className="flex items-center flex justify-center">
+            <nav className="flex items-center flex-col justify-center">
                 <CustomLink href="/" title="React" className="mr-4" />
                 <CustomLink href="/" title="Angular" className="mr-4" />
                 <CustomLink href="/" title="Django" className="mr-4" />
@@ -67,42 +67,42 @@ const Navbar = ({changeTheme}) => {
             </nav>
             
             <nav className="w-100 flex items-center justify-center flex-wrap">
-                <motion.a href="https://www.twiter.com" target={"_blank"} 
-                className="w-6 mx-3" 
-                whileHover={{y:-2}}
-                whileTap={{scale:0.9}}
-                >
-                    <TwitterIcon/>
-                </motion.a>
-                <motion.a href="https://www.twiter.com" target={"_blank"}
+            <motion.a href="https://github.com/Osmez" target={"_blank"} 
                 className="w-6 mx-3" 
                 whileHover={{y:-2}}
                 whileTap={{scale:0.9}}
                 >
                     <GithubIcon/>
                 </motion.a>
-                <motion.a href="https://www.twiter.com" target={"_blank"}
+                <motion.a href="https://www.linkedin.com/in/osama-namur-408834182/" target={"_blank"}
                 className="w-6 mx-3" 
                 whileHover={{y:-2}}
                 whileTap={{scale:0.9}}
                 >
                     <LinkedInIcon/>
                 </motion.a>
-                <motion.a href="https://www.twiter.com" target={"_blank"}
+                <motion.a href="https://sketchfab.com/CezarBlack" target={"_blank"}
                 className="w-6 mx-3" 
                 whileHover={{y:-2}}
                 whileTap={{scale:0.9}}
                 >
-                    <PinterestIcon/>
+                    <Image className={`max-w-[35px]`} src={sketch} width="50px" height="50px" alt="facebook icon"></Image> 
                 </motion.a>
-                <motion.a href="https://www.twiter.com" target={"_blank"}
+                <motion.a href="https://www.facebook.com/osama.namur" target={"_blank"}
                 className="w-6 mx-3" 
                 whileHover={{y:-2}}
                 whileTap={{scale:0.9}}
                 >
-                    <DribbbleIcon/>
+                   <Image className={`max-w-[35px]`} src={face} width="50px" height="50px" alt="facebook icon"></Image>
                 </motion.a>
-                <motion.button onClick={changeTheme}>
+                <motion.a href="https://github.com/Osmez" target={"_blank"}
+                className="w-6 mx-3" 
+                whileHover={{y:-2}}
+                whileTap={{scale:0.9}}
+                >
+                   
+                </motion.a>
+                <motion.button className={`mx-2`} onClick={changeTheme}>
                     Dark Mode
                 </motion.button>
             </nav>
@@ -118,41 +118,38 @@ const Navbar = ({changeTheme}) => {
             </nav>
             
             <nav className="flex items-center justify-center flex-wrap">
-                <motion.a href="https://www.twiter.com" target={"_blank"} 
-                className="w-6 mx-3 sm:mx-1" 
-                whileHover={{y:-2}}
-                whileTap={{scale:0.9}}
-                >
-                    <TwitterIcon/>
-                </motion.a>
-                <motion.a href="https://www.twiter.com" target={"_blank"}
-                className="w-6 mx-3 sm:mx-1" 
+            <motion.a href="https://github.com/Osmez" target={"_blank"} 
+                className="w-6 mx-3" 
                 whileHover={{y:-2}}
                 whileTap={{scale:0.9}}
                 >
                     <GithubIcon/>
                 </motion.a>
-                <motion.a href="https://www.twiter.com" target={"_blank"}
-                className="w-6 mx-3 sm:mx-1" 
+                <motion.a href="https://www.linkedin.com/in/osama-namur-408834182/" target={"_blank"}
+                className="w-6 mx-3" 
                 whileHover={{y:-2}}
                 whileTap={{scale:0.9}}
                 >
                     <LinkedInIcon/>
                 </motion.a>
-                <motion.a href="https://www.twiter.com" target={"_blank"}
-                className="w-6 mx-3 sm:mx-1" 
+                <motion.a href="https://sketchfab.com/CezarBlack" target={"_blank"}
+                className="w-6 mx-3" 
                 whileHover={{y:-2}}
                 whileTap={{scale:0.9}}
                 >
-                    <PinterestIcon/>
+                    <Image className={`max-w-[35px]`} src={sketch} width="50px" height="50px" alt="facebook icon"></Image> 
                 </motion.a>
-                <motion.a href="https://www.twiter.com" target={"_blank"}
-                className="w-6 mx-3 sm:mx-1" 
+                <motion.a href="https://www.facebook.com/osama.namur" target={"_blank"}
+                className="w-6 mx-3" 
                 whileHover={{y:-2}}
                 whileTap={{scale:0.9}}
                 >
-                    <DribbbleIcon/>
+                   <Image className={`max-w-[35px]`} src={face} width="50px" height="50px" alt="facebook icon"></Image>
                 </motion.a>
+               
+                <motion.button className={`mx-2 text-light`} onClick={changeTheme}>
+                    Dark Mode
+                </motion.button>
                
             </nav>
                 
