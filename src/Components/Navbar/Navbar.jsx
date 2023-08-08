@@ -8,6 +8,9 @@ import { LinkedInIcon } from "../Icons/Icons";
 import { TwitterIcon } from "../Icons/Icons";
 import { motion } from "framer-motion";
 import Logo from "../Logo/Logo";
+import Image from "next/image";
+import face from "../../../public/face.png";
+import sketch from "../../../public/sketch.png";
 import { ThemeContext } from "@/Context/ThemeContext";
 
 const CustomLink = ({href, title, className}) => {
