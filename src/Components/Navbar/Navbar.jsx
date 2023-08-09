@@ -14,7 +14,6 @@ import sketch from "../../../public/sketch.png";
 import { ThemeContext } from "@/Context/ThemeContext";
 
 const CustomLink = ({href, title, className}) => {
-
     const router = useRouter();
     return(
         <Link href={href} className={`${className} relative group`}>
@@ -25,9 +24,7 @@ const CustomLink = ({href, title, className}) => {
 }
 
 const CustomMobileLink = ({href, title, className, toggle}) => {
-
     const router = useRouter();
-
     const handleClick = ()=> {
         toggle();
         router.push(href);
@@ -61,7 +58,7 @@ const Navbar = ({changeTheme}) => {
 
             <section className="w-full flex justify-between items-center lg:hidden">
             
-            <nav className="flex items-center flex-col justify-center">
+            <nav className="flex items-center justify-center">
                 <CustomLink href="/" title="React" className="mr-4" />
                 <CustomLink href="/" title="Angular" className="mr-4" />
                 <CustomLink href="/" title="Django" className="mr-4" />
